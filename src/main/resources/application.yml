@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: payment-system
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: ${DB_URL}
+    username: ${DB_USERNAME}
+    password: ${DB_PW}
+
+  jpa:
+    database: mysql
+    hibernate:
+      ddl-auto: update  # create, create-drop, update, validate, none
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+        use_sql_comments: true
