@@ -58,7 +58,7 @@ jobs:
       - name: Deploy
         run: |
           aws deploy create-deployment \
-          --application-name cicd-project \
+          --application-name payment-cicd-project \
           --deployment-config-name CodeDeployDefault.AllAtOnce \
           --deployment-group-name payment-cicd-prod \
           --file-exists-behavior OVERWRITE \
