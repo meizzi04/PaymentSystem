@@ -37,13 +37,11 @@
     </springProfile>
     <springProfile name="dev|stg"> <!-- dev, stg 환경일 경우 INFO 레벨의 로그를 파일로 저장 -->
         <root level="INFO">
-            <appender-ref ref="CONSOLE" />
             <appender-ref ref="FILE" />
         </root>
     </springProfile>
     <springProfile name="prod"> <!-- prod 환경일 경우 ERROR 레벨의 로그를 파일로 저장 -->
         <root level="ERROR">
-            <appender-ref ref="CONSOLE" />
             <appender-ref ref="FILE" />
         </root>
     </springProfile>
